@@ -1,6 +1,19 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
-# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,linux,macos,node,react
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,linux,macos,node,react
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,database,dotenv,linux,node,react,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,database,dotenv,linux,node,react,windows
+
+### Database ###
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sqlite3
+*.db-shm
+*.db-wal
+
+### dotenv ###
+.env
 
 ### Linux ###
 *~
@@ -126,7 +139,6 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
 .env.development.local
 .env.test.local
 .env.production.local
@@ -248,6 +260,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,linux,macos,node,react
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,database,dotenv,linux,node,react,windows
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
