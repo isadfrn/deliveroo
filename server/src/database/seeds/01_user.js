@@ -1,8 +1,8 @@
 exports.seed = (knex) => {
-  return knex("users")
+  return knex("user")
     .del()
     .then(() => {
-      return knex("users").insert([
+      return knex("user").insert([
         {
           id: knex.raw("uuid_generate_v4()"),
           name: "Isabella Nunes",

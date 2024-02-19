@@ -1,5 +1,5 @@
 exports.up = (knex) => {
-  return knex.schema.createTable("users", (table) => {
+  return knex.schema.createTable("user", (table) => {
     table.uuid("id").primary().defaultTo(knex.raw("uuid_generate_v4()"));
     table.string("name").notNullable();
     table.string("email").unique().notNullable();
@@ -12,4 +12,4 @@ exports.up = (knex) => {
   });
 };
 
-exports.down = (knex) => knex.schema.dropTableIfExists("users");
+exports.down = (knex) => knex.schema.dropTableIfExists("user");
