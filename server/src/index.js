@@ -5,9 +5,11 @@ const nodeBanner = require("node-banner");
 const cors = require("cors");
 const port = process.env.PORT || 3333;
 const app = express();
+const route = require("./route");
 
 app.use(cors());
-app.use(express());
+app.use(express.json());
+app.use(route);
 
 app.listen(port, async () => {
   await nodeBanner(
